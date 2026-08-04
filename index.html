@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday Mohit 💗</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="intro" class="screen intro">
+  <div class="sparkles"></div>
+  <div class="bubu-dudu big"><span>🐻‍❄️</span><span>🐻</span></div>
+  <p class="tiny">A tiny surprise made with lots of love...</p>
+  <h1>For My Favorite Person 💗</h1>
+  <p>Happy Birthday, <b>Mohit</b>!</p>
+  <button class="btn" id="startBtn">🎁 Open Your Surprise</button>
+</div>
+
+<header class="topbar">
+  <div>💗 Mohit & Aastha</div>
+  <button id="musicBtn">🎵 Play our song</button>
+</header>
+
+<main id="app" class="hidden">
+<section class="hero">
+  <div class="bubu-dudu"><span>🐻‍❄️</span><span>🐻</span></div>
+  <p class="tag">22 August 2026</p>
+  <h1>Happy Birthday<br><em>Mohit</em> 💕</h1>
+  <p class="subtitle">A little world made especially for you, from Aastha Sethi Arora.</p>
+  <div class="hearts">♡ ♥ ♡ ♥ ♡</div>
+</section>
+
+<section class="section gifts">
+  <p class="eyebrow">Pick a present 🎁</p>
+  <h2>Three little surprises for you</h2>
+  <div class="gift-grid">
+    <button class="gift" data-title="A Little Love Note 💌" data-text="You are my best friend, my favorite person, and my forever home. I love you more than words can say. ❤️"><span class="gift-icon">🎁</span><b>Gift One</b><small>Open me</small></button>
+    <button class="gift" data-title="One Million Reasons ❤️" data-text="Your smile, your kindness, your laugh, your strength, your hugs... and every little thing that makes you, you."><span class="gift-icon">🎀</span><b>Gift Two</b><small>Open me</small></button>
+    <button class="gift" data-title="A Promise Forever 💍" data-text="Whatever adventures come next, I want to walk through them with you. Today, tomorrow, and always."><span class="gift-icon">💝</span><b>Gift Three</b><small>Open me</small></button>
+  </div>
+</section>
+
+<section class="section letter-section">
+  <p class="eyebrow">From my heart to yours</p>
+  <h2>Open My Love Letter 💌</h2>
+  <button id="envelope" class="envelope"><span>💌</span><small>Tap to open</small></button>
+  <div id="letter" class="letter hidden">
+    <h3>My Dearest Mohit,</h3>
+    <p>Happy Birthday to the most wonderful person in my life.</p>
+    <p>Thank you for every smile, every laugh, every adventure, and every beautiful memory. You make ordinary days feel extraordinary.</p>
+    <p>I hope this new year of your life brings you endless happiness, success, good health, and everything your heart wishes for.</p>
+    <p>You are my best friend, my greatest blessing, and my forever home.</p>
+    <p class="sign">Forever yours,<br><b>Aastha ❤️</b></p>
+  </div>
+</section>
+
+<section class="section gallery-section">
+  <p class="eyebrow">Our little collection of forever</p>
+  <h2>Our Memories 📸</h2>
+  <p class="hint">Add your photos as photo1.jpg, photo2.jpg... in <code>assets/photos</code>.</p>
+  <div id="gallery" class="gallery"></div>
+</section>
+
+<section class="section reasons">
+  <p class="eyebrow">Just a few reasons</p>
+  <h2>Why I Love You ❤️</h2>
+  <div class="reason-grid">
+    <button class="reason">😊<b>Your Smile</b><span>My favorite view in the whole world.</span></button>
+    <button class="reason">🤍<b>Your Heart</b><span>Your kindness makes everything beautiful.</span></button>
+    <button class="reason">🫶<b>Your Support</b><span>You always make me feel safe and loved.</span></button>
+    <button class="reason">🌎<b>Our Adventures</b><span>Every journey is better with you.</span></button>
+    <button class="reason">🥰<b>Your Laugh</b><span>My favorite sound will always be your happiness.</span></button>
+    <button class="reason">💍<b>Our Forever</b><span>I choose you, again and again.</span></button>
+  </div>
+</section>
+
+<section class="section cake-section">
+  <p class="eyebrow">Make a wish, birthday boy</p>
+  <h2>Birthday Magic 🎂</h2>
+  <div class="cake">🎂<div class="flames">🔥 🔥 🔥</div></div>
+  <button class="btn" id="wishBtn">✨ Blow the Candles</button>
+  <p id="wish" class="wish">Make a beautiful wish...</p>
+</section>
+
+<section class="finale">
+  <div class="bubu-dudu big"><span>🐻‍❄️</span><span>🐻</span></div>
+  <p class="eyebrow">One last surprise...</p>
+  <h2>Happy Birthday,<br>My Love ❤️</h2>
+  <p>You are my today, my tomorrow, and my forever.</p>
+  <h3>Mohit ❤️ Aastha</h3>
+  <button class="btn" id="finalBtn">🎆 Celebrate!</button>
+</section>
+</main>
+
+<div id="modal" class="modal">
+  <div class="modal-card">
+    <button id="closeModal">×</button>
+    <div>🎁</div>
+    <h2 id="modalTitle"></h2>
+    <p id="modalText"></p>
+    <button class="btn" id="modalOk">Awww ❤️</button>
+  </div>
+</div>
+
+<div id="lightbox" class="modal"><button id="closeLightbox">×</button><img id="lightboxImg" alt="Memory"></div>
+<audio id="song" src="assets/music/tu-hai-meri.mp3" preload="metadata"></audio>
+<script src="script.js"></script>
+</body>
+</html>
